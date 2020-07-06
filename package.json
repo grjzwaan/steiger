@@ -1,0 +1,33 @@
+{
+  "name": "steiger",
+  "version": "0.0.1",
+  "description": "Steiger scaffolds files without fuss.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grjzwaan/steiger.git"
+  },
+  "keywords": [
+    "scaffold",
+    "js"
+  ],
+  "author": "Ruben van der Zwaan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/grjzwaan/steiger/issues"
+  },
+  "bin": {
+    "steiger": "./cli.js"
+  },
+  "homepage": "https://github.com/grjzwaan/steiger#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^5.1.0",
+    "glob": "^7.1.6",
+    "luxon": "^1.24.1",
+    "nunjucks": "^3.2.1"
+  }
+}
