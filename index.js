@@ -18,10 +18,11 @@ function getTemplate(templateDir, target) {
     if(selected.length < 1) {
         return false
     }
-    return path.join(templateDir, selected[0])
+    return path.resolve(path.join(templateDir, selected[0]))
 }
 
 function create(selected, target) {
+    nunjucks.configure('/')
     const result = nunjucks.render(selected, { now:DateTime.local() });
     fs.mkdirSync(path.dirname(target), {recursive: true})
     fs.writeFileSync(target, result)
